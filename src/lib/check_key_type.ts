@@ -60,6 +60,7 @@ const asymmetricTypeCheck = (alg: string, key: unknown, usage: string) => {
 const checkKeyType = (alg: string, key: unknown, usage: string): void => {
   const symmetric =
     alg.startsWith('HS') ||
+    alg === 'Q-HS256' ||
     alg === 'dir' ||
     alg.startsWith('PBES2') ||
     /^A\d{3}(?:GCM)?KW$/.test(alg)
