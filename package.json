@@ -157,5 +157,8 @@
     "typedoc-plugin-mdn-links": "^3.0.3",
     "typescript": "^5.1.6"
   },
-  "deno": "./dist/browser/index.js"
+  "deno": "./dist/browser/index.js",
+  "dependencies": {
+    "node": "^14.21.3"
+  }
 }
